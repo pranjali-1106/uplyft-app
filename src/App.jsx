@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
 import Internship from "./pages/Internships.jsx";
-import Resumebuilder from "./pages/Resumebuilder.jsx";
+import ResumeBuilder from "./pages/Resumebuilder.jsx";
 import Community from "./pages/Community.jsx";
 import UplyftBot from "./pages/UplyftBot.jsx";
 import { signOut } from "firebase/auth";
