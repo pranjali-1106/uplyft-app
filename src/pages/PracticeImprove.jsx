@@ -42,7 +42,39 @@ Practice & Improve 🚀
     }}>
       <h2>💻 Coding Practice</h2>
       <p>Practice programming questions and improve your problem-solving skills.</p>
-      <p><b>Coming Soon!</b></p>
+      <textarea
+  id="codingAnswer"
+  placeholder="Yahan apna answer likho..."
+  rows="5"
+  style={{
+    width: "100%",
+    padding: "10px",
+    marginTop: "10px",
+    borderRadius: "8px"
+  }}
+/>
+
+<button
+  onClick={() => {
+    const answer = document.getElementById("codingAnswer").value;
+    if (answer.trim() === "Hello World") {
+      alert("Correct Answer! 🎉");
+    } else {
+      alert("Try Again! Hint: Hello World likho.");
+    }
+  }}
+  style={{
+    background: "#6c45c0",
+    color: "white",
+    padding: "10px 20px",
+    border: "none",
+    borderRadius: "8px",
+    marginTop: "10px",
+    cursor: "pointer"
+  }}
+>
+  Check Answer
+</button>
     </div>
 
     <div style={{
