@@ -6,6 +6,7 @@ import Internship from "./pages/Internships.jsx";
 import Resumebuilder from "./pages/ResumeBuilder.jsx";
 import Community from "./pages/Community.jsx";
 import UplyftBot from "./pages/UplyftBot.jsx";
+import PracticeImprove from "./pages/PracticeImprove.jsx";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase";
 
@@ -55,6 +56,9 @@ function App() {
                 <Link to="/aiassistant" style={{color: "white" }}>
                 AI Assistant 
                 </Link>
+                <Link to="/practice" style={{color:"white"}}>
+                Practice & Improve
+                </Link>
                 <button
                 onClick={handleLogout}
                 style={{
@@ -81,6 +85,8 @@ function App() {
         <Route path="/community" element={<Community />} />
 
         <Route path="/aiassistant" element={<UplyftBot/>} />
+
+        <Route path="/practice" element={<PracticeImprove/>}/>
       </Routes>
     </BrowserRouter>
   );
